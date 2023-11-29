@@ -15,6 +15,7 @@ import { InstallationComponent } from './installation/installation.component';
 import { InnovativeComponent } from './innovative/innovative.component';
 import { CustomersayComponent } from './customersay/customersay.component';
 import { FaqComponent } from './faq/faq.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FaqComponent } from './faq/faq.component';
     InstallationComponent,
     InnovativeComponent,
     CustomersayComponent,
-    FaqComponent
+    FaqComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
