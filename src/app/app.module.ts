@@ -17,6 +17,7 @@ import { CustomersayComponent } from './customersay/customersay.component';
 import { FaqComponent } from './faq/faq.component';
 import { TeamComponent } from './team/team.component';
 import { HiringComponent } from './hiring/hiring.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HiringComponent } from './hiring/hiring.component';
     CustomersayComponent,
     FaqComponent,
     TeamComponent,
-    HiringComponent
+    HiringComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
