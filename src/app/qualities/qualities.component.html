@@ -1,0 +1,20 @@
+<section class="h-screen">
+  <div class=" flex h-screen">
+    <div>
+      <img src="" alt="">
+    </div>
+    <div class="img border-2 m-16 border-yellow-500 w-2/4 ">
+      <img src="" alt="">
+    </div>
+    <div class="w-2/4 flex flex-col gap-6 justify-center p-16">
+      <div class="first" *ngFor="let card of cards" >
+        <p class="text-5xl">
+          {{card.title}}
+        </p>
+        <p class="text-lg">
+          {{card.description}}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
