@@ -16,6 +16,7 @@ import { InnovativeComponent } from './innovative/innovative.component';
 import { CustomersayComponent } from './customersay/customersay.component';
 import { FaqComponent } from './faq/faq.component';
 import { TeamComponent } from './team/team.component';
+import { HiringComponent } from './hiring/hiring.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TeamComponent } from './team/team.component';
     InnovativeComponent,
     CustomersayComponent,
     FaqComponent,
-    TeamComponent
+    TeamComponent,
+    HiringComponent
   ],
   imports: [
     BrowserModule,
