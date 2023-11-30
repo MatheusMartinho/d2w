@@ -30,8 +30,16 @@
           </ul>
         </details>
       </li>
-      <li><a>Contact</a></li>
+      <li><a>{{"Contact" | translate}}</a></li>
     </ul>
+    <div class="">
+      <!-- Your other nav items -->
+      <!-- nav.component.html -->
+    <button class="..." (click)="languageService.switchLanguage('en')">English</button>
+    <button class="..." (click)="languageService.switchLanguage('pt')">Português</button>
+
+    </div>
+
   </div>
   <div class="navbar-end">
     <div class="form-control">
