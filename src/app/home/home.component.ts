@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../services/language.service'; // Ajuste o caminho conforme necessário
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent {
-
+  constructor(public languageService: LanguageService) {}
 }
