@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-experience',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./experience.component.sass']
 })
 export class ExperienceComponent {
-
+  constructor(public languagueService: LanguageService){}
 }
