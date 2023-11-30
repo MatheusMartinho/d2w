@@ -9,6 +9,6 @@ import { LanguageService } from './services/language.service';
 export class AppComponent {
   title = 'd2w-website';
   constructor(private languageService: LanguageService) {
-    this.languageService.switchLanguage('en'); // Define o idioma padrão
+    this.languageService.switchLanguage('pt');
   }
 }
