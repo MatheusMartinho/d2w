@@ -9,4 +9,5 @@ import { LanguageService } from '../services/language.service'; // Ajuste o cami
 })
 export class NavComponent {
   constructor(public languageService: LanguageService) {}
+
 }
