@@ -1,40 +1,59 @@
 <footer class="footer p-10 bg-base-200 text-base-content">
   <nav>
-    <header class="footer-title">Produtos</header>
-    <a class="link link-hover">Racks para Datacenter</a>
-    <a class="link link-hover">Rack Piso e Mini Rack Light</a>
-    <a class="link link-hover">Racks para Cabeamento</a>
-    <a class="link link-hover">Gabinetes Externos</a>
-    <a class="link link-hover">Projetos Especiais</a>
-    <a class="link link-hover">Acessórios</a>
+    <header class="footer-title">{{ "Produtos" | translate }}</header>
+    <a class="link link-hover">{{ "Racks para Datacenter" | translate }}</a>
+    <a class="link link-hover">{{
+      "Rack Piso e Mini Rack Light" | translate
+    }}</a>
+    <a class="link link-hover">{{ "Racks para Cabeamento" | translate }}</a>
+    <a class="link link-hover">{{ "Gabinetes Externos" | translate }}</a>
+    <a class="link link-hover">{{ "Projetos Especiais" | translate }}</a>
+    <a class="link link-hover">{{ "Acessórios" | translate }}</a>
   </nav>
   <nav>
-    <header class="footer-title">Empresa</header>
-    <a class="link link-hover">Sobre Nós</a>
-    <a class="link link-hover">Contato</a>
-    <a class="link link-hover">Onde Encontrar</a>
-    <a class="link link-hover">Produtos</a>
+    <header class="footer-title">{{ "Empresa" | translate }}</header>
+    <a class="link link-hover">{{ "Sobre Nós" | translate }}</a>
+    <a class="link link-hover">{{ "Contato" | translate }}</a>
+    <a class="link link-hover">{{ "Onde Encontrar" | translate }}</a>
+    <a class="link link-hover">{{ "Produtos" | translate }}</a>
   </nav>
   <nav>
-    <header class="footer-title">Atendimento ao Cliente</header>
-    <a class="">Segunda a Quinta, das 08:00 às 18:00</a>
-    <p class="">Sextas, das 08:00 às 17:00</p>
-    <p class="">Telefone: (11) 5522-2699</p>
-    <p class="">Email: vendas@d2w.ind.br</p>
-    <p class="">Endereço: Rua Ptolomeu, 734, Bairro Socorro –</p>
-    <p class="">São Paulo / SP – CEP 04762-040</p>
+    <header class="footer-title">
+      {{ "Atendimento ao Cliente" | translate }}
+    </header>
+    <a class="">{{ "Segunda a Quinta, das 08:00 às 18:00" | translate }}</a>
+    <p class="">{{ "Sextas, das 08:00 às 17:00" | translate }}</p>
+    <p class="">{{ "Telefone: (11) 5522-2699" | translate }}</p>
+    <p class="">{{ "Email: vendas@d2w.ind.br" | translate }}</p>
+    <p class="">
+      {{ "Endereço: Rua Ptolomeu, 734, Bairro Socorro –" | translate }}
+    </p>
+    <p class="">{{ "São Paulo / SP – CEP 04762-040" | translate }}</p>
   </nav>
   <form>
-    <header class="footer-title">Newsletter</header>
+    <header class="footer-title">{{ "Newsletter" | translate }}</header>
     <fieldset class="form-control w-80">
       <label class="label">
-        <span class="label-text">Insira seu endereço de email</span>
+        <span class="label-text">{{
+          "Insira seu endereço de email" | translate
+        }}</span>
       </label>
       <div class="join">
-        <input type="text" placeholder="usuario@site.com" class="input input-bordered join-item w-80" />
-        <button class="btn btn-primary join-item bg-blue-400 text-white">Inscrever-se</button>
+        <input
+          type="text"
+          placeholder="usuario@site.com"
+          class="input input-bordered join-item w-80"
+        />
+        <button class="btn btn-primary join-item bg-blue-400 text-white">
+          {{ "Inscrever-se" | translate }}
+        </button>
       </div>
-      <p class="text-xs pl-2 pt-2">Ao se inscrever, você concorda com nossa Política de Privacidade e consente em receber atualizações da nossa empresa.</p>
+      <p class="text-xs pl-2 pt-2">
+        {{
+          "Ao se inscrever, você concorda com nossa Política de Privacidade e
+        consente em receber atualizações da nossa empresa." | translate
+        }}
+      </p>
     </fieldset>
   </form>
 </footer>

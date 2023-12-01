@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-team',
@@ -17,4 +18,5 @@ export class TeamComponent {
     {name: 'John', profession: 'Data Center Specialist', description: 'John is a highly skilled professional with extensive experience in data center managemente'},
     {name: 'John', profession: 'Data Center Specialist', description: 'John is a highly skilled professional with extensive experience in data center managemente'},
   ]
+  constructor(public languagueService: LanguageService){}
 }

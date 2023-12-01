@@ -1,59 +1,103 @@
-<section class=" h-screen flex m-16">
+<section class="h-screen flex m-16">
   <div class="left w-2/4">
-    <p class="text-5xl">Perguntas Frequentes</p>
-    <p class="text-lg">Encontre respostas para perguntas comuns sobre racks para servidores<br> e os produtos inovadores e duráveis da D2W.</p>
-    <button class="btn bg-blue-400 text-white">Contato</button>
+    <p class="text-5xl">{{ "Perguntas Frequentes" | translate }}</p>
+    <p class="text-lg">
+      {{
+        "Encontre respostas para perguntas comuns sobre racks para servidores e os produtos inovadores e duráveis da D2W."
+          | translate
+      }}
+    </p>
+    <button class="btn bg-blue-400 text-white">
+      {{ "Contato" | translate }}
+    </button>
   </div>
   <div class="right flex flex-col gap-4 w-2/4">
-      <div class="collapse collapse-arrow bg-base-200 bg-white">
-        <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-2xl font-bold">
-          O que são racks para servidores?
-        </div>
-        <div class="collapse-content">
-          <p class="text-lg">Racks para servidores são estruturas ou armários especializados projetados para segurar e organizar servidores, equipamentos de rede e outros componentes de infraestrutura de TI em centros de dados ou salas de servidores.</p>
-        </div>
+    <div class="collapse collapse-arrow bg-base-200 bg-white">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-2xl font-bold">
+        {{ "O que são racks para servidores?" | translate }}
       </div>
-      <div class="collapse collapse-arrow bg-base-200 bg-white">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-2xl font-bold">
-          Por que os racks para servidores são importantes?
-        </div>
-        <div class="collapse-content">
-          <p class="text-lg">Os racks para servidores são importantes porque proporcionam uma utilização eficiente do espaço, fluxo de ar e refrigeração adequados, gestão de cabos e segurança física para servidores e outros equipamentos, garantindo desempenho ótimo e confiabilidade.</p>
-        </div>
+      <div class="collapse-content">
+        <p class="text-lg">
+          {{
+            "Racks para servidores são estruturas ou armários especializados projetados para segurar e organizar servidores, equipamentos de rede e outros componentes de infraestrutura de TI em centros de dados ou salas de servidores."
+              | translate
+          }}
+        </p>
       </div>
-      <div class="collapse collapse-arrow bg-base-200 bg-white">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-2xl font-bold">
-          Quais tipos de racks para servidores vocês oferecem?
-        </div>
-        <div class="collapse-content">
-          <p class="text-lg">Oferecemos uma ampla gama de racks para servidores, incluindo racks de estrutura aberta, racks fechados, racks de montagem em parede e racks especiais projetados para requisitos específicos. Nossos racks são construídos com durabilidade, flexibilidade e facilidade de instalação em mente.</p>
-        </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200 bg-white">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-2xl font-bold">
+        {{ "Por que os racks para servidores são importantes?" | translate }}
       </div>
-      <div class="collapse collapse-arrow bg-base-200 bg-white">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-2xl font-bold">
-          Como escolher o rack para servidor certo?
-        </div>
-        <div class="collapse-content">
-          <p class="text-lg">Escolher o rack para servidor certo depende de fatores como tamanho e número de servidores, espaço disponível, requisitos de refrigeração e necessidades futuras de escalabilidade. Nossa equipe de especialistas pode ajudar a selecionar o rack ideal para suas necessidades específicas.</p>
-        </div>
+      <div class="collapse-content">
+        <p class="text-lg">
+          {{
+            "Os racks para servidores são importantes porque proporcionam uma utilização eficiente do espaço, fluxo de ar e refrigeração adequados, gestão de cabos e segurança física para servidores e outros equipamentos, garantindo desempenho ótimo e confiabilidade."
+              | translate
+          }}
+        </p>
       </div>
-      <div class="collapse collapse-arrow bg-base-200 bg-white">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-2xl font-bold">
-          Vocês oferecem racks personalizados?
-        </div>
-        <div class="collapse-content">
-          <p class="text-lg">Sim, oferecemos soluções personalizadas de racks para atender às suas necessidades exclusivas. Nossa equipe pode trabalhar com você para projetar e fabricar racks que se ajustem perfeitamente às suas especificações e ofereçam a funcionalidade necessária.</p>
-        </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200 bg-white">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-2xl font-bold">
+        {{ "Quais tipos de racks para servidores vocês oferecem?" | translate }}
       </div>
-      <div class="collapse collapse-arrow bg-base-200 bg-white">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-2xl font-bold">
-          Os racks para servidores podem ser personalizados para requisitos específicos de energia?
-        </div>
-        <div class="collapse-content">
-          <p class="text-lg">Sim, os racks para servidores podem ser personalizados para acomodar requisitos específicos de energia. Isso inclui a integração de unidades de distribuição de energia (PDUs), fontes de alimentação ininterrupta (UPS) e outras soluções de gerenci
+      <div class="collapse-content">
+        <p class="text-lg">
+          {{
+            "Oferecemos uma ampla gama de racks para servidores, incluindo racks de estrutura aberta, racks fechados, racks de montagem em parede e racks especiais projetados para requisitos específicos. Nossos racks são construídos com durabilidade, flexibilidade e facilidade de instalação em mente."
+              | translate
+          }}
+        </p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200 bg-white">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-2xl font-bold">
+        {{ "Como escolher o rack para servidor certo?" | translate }}
+      </div>
+      <div class="collapse-content">
+        <p class="text-lg">
+          {{
+            "Escolher o rack para servidor certo depende de fatores como tamanho e número de servidores, espaço disponível, requisitos de refrigeração e necessidades futuras de escalabilidade. Nossa equipe de especialistas pode ajudar a selecionar o rack ideal para suas necessidades específicas."
+              | translate
+          }}
+        </p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200 bg-white">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-2xl font-bold">
+        {{ "Vocês oferecem racks personalizados?" | translate }}
+      </div>
+      <div class="collapse-content">
+        <p class="text-lg">
+          {{
+            "Sim, oferecemos soluções personalizadas de racks para atender às suas necessidades exclusivas. Nossa equipe pode trabalhar com você para projetar e fabricar racks que se ajustem perfeitamente às suas especificações e ofereçam a funcionalidade necessária."
+              | translate
+          }}
+        </p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200 bg-white">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-2xl font-bold">
+        {{
+          "Os racks para servidores podem ser personalizados para requisitos específicos de energia?"
+            | translate
+        }}
+      </div>
+      <div class="collapse-content">
+        <p class="text-lg">
+          {{
+            "Sim, os racks para servidores podem ser adaptados para requisitos específicos de energia. Esta customização envolve ajustes na capacidade energética, integração de sistemas de distribuição de energia, soluções de backup e gerenciamento eficiente de energia, assegurando o suporte adequado aos equipamentos de acordo com as necessidades do seu ambiente de TI."
+              | translate
+          }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
