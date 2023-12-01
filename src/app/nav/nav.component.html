@@ -1,49 +1,47 @@
-<div class="relative z-10 navbar bg-white">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+<div class=" bg-base-100 ">
+  <div class="navbar flex w-10/12 m-auto">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>Empresa</a></li>
+          <li><a>Distribuidores</a></li>
+          <li>
+            <a>Produtos</a>
+            <ul class="p-2">
+              <li><a>Racks para datacenter 1</a></li>
+              <li><a>Rack Piso e mini Rack Light 2</a></li>
+              <li><a>Racks para cabeamento</a></li>
+              <li><a>Gabinetes Outdoor</a></li>
+              <li><a>Projetos Especiais</a></li>
+              <li><a href="">Acessórios</a></li>
+            </ul>
+          </li>
+          <li><a>Contato</a></li>
+          <li><a>ORÇAMENTO</a></li>
+        </ul>
       </div>
-      <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul class="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
-      </ul>
     </div>
-    <a class="btn btn-ghost text-xl"> <img src="/assets/images/logos/logod2w.png" alt="" class="w-16"></a>
+    <div class="navbar-center">
+      <a class="btn btn-ghost text-xl"><img class= "w-16" src="/assets/images/logos/logod2w.png" alt=""></a>
+    </div>
+    <div class="navbar-end">
+      <div class=" flex gap-4 p-2 border-r border-r-gray-400">
+        <button class="..." (click)="languageService.switchLanguage('en')">EN</button>
+        <button class="..." (click)="languageService.switchLanguage('pt')">PT</button>
+      </div>
+      <button class="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+      </button>
+      <button class="btn btn-ghost btn-circle">
+        <div class="indicator">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+          <span class="badge badge-xs badge-primary indicator-item"></span>
+        </div>
+      </button>
+    </div>
   </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      <li><a>About us</a></li>
-      <li>
-        <details>
-          <summary>More</summary>
-          <ul class="p-2">
-            <li><a>Products</a></li>
-            <li><a>Services</a></li>
-          </ul>
-        </details>
-      </li>
-      <li><a>{{"Contact" | translate}}</a></li>
-    </ul>
-    <div class="">
-      <!-- Your other nav items -->
-      <!-- nav.component.html -->
-    <button class="..." (click)="languageService.switchLanguage('en')">English</button>
-    <button class="..." (click)="languageService.switchLanguage('pt')">Português</button>
 
-    </div>
-
-  </div>
-  <div class="navbar-end">
-    <div class="form-control">
-      <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-    </div>
 </div>
-
