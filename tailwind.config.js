@@ -4,11 +4,12 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        '128': "26rem",
+        128: "42rem",
+        129: "27rem",
       },
       width: {
-        '128': "22rem"
-      }
+        128: "22rem",
+      },
     },
   },
   plugins: [require("daisyui")],

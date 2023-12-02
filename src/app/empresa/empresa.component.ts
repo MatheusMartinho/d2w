@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-empresa',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./empresa.component.sass']
 })
 export class EmpresaComponent {
-
+  constructor(public languageService:LanguageService){}
 }
