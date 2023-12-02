@@ -21,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { EmpresaComponent } from './empresa/empresa.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -39,7 +40,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FaqComponent,
     TeamComponent,
     HiringComponent,
-    FooterComponent
+    FooterComponent,
+    EmpresaComponent
   ],
   imports: [
     BrowserModule,
