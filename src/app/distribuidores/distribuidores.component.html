@@ -1,16 +1,42 @@
-<section>
-  <div class="right">
-    <div class="card card-side bg-base-100 shadow-xl">
-      <figure><img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie"/></figure>
-      <div class="card-body" *ngIf="currentState">
+<section class="flex m-16">
+  <div class="right w-1/2 flex  items-center justify-center">
+    <div class="card card-side bg-base-100 shadow-xl flex flex-col  h-full w-7/12 items-center">
+      <!-- Conteúdo que depende de currentState -->
+      <div class="card-body" *ngIf="currentState; else defaultContent">
         <h2 class="card-title">{{ currentState?.nome }}</h2>
-        <p>{{ currentState?.capital }}.</p>
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary">Watch</button>
+        <a href="{{currentState?.url}}" target="_blank">
+          <img src="{{ currentState?.capital }}" alt="Imagem de {{ currentState?.nome }}">
+        </a>
+        <p>{{ currentState?.description}}
+
+        <div class="mockup-browser bg-base-300 w-96">
+          <div class="mockup-browser-toolbar">
+            <div class="input">www.horustelecom.com.br</div>
+          </div>
+          <div class="flex justify-center bg-base-200"><img src="{{ currentState?.img1 }}" alt="Imagem de {{ currentState?.nome }}"></div>
         </div>
       </div>
+
+      <div class="card-actions justify-end flex justify-center m-6">
+        <button class="btn btn-primary">Watch</button>
+      </div>
+
+      <!-- Conteúdo Padrão -->
+      <ng-template #defaultContent>
+        <div class="card-body">
+          <p>D2W<p>
+            <img src="/assets/images/logos/logod2w.png" alt="">
+          <p class="card-title">Tel/Fax: (11) 5522-2699</p>
+          <p>WhatsApp: (11) 91116-0637</p>
+          <p>Clique nos demais estados do mapa para mais opções.</p>
+        </div>
+      </ng-template>
+
+
+
     </div>
   </div>
+
     <div class="mapa">
       <svg
         xmlns:mapsvg="http://mapsvg.com"
@@ -211,33 +237,33 @@
           class = "estado"
           (click)="onPathClick($event)"
         />
-        <text x="20" y="218" font-size="10" fill="white">AC</text>
-        <text x="580" y="236" font-size="10" fill="white">AL</text>
-        <text x="340" y="72" font-size="10" fill="white">AP</text>
-        <text x="166" y="158" font-size="10" fill="white">AM</text>
-        <text x="490" y="280" font-size="10" fill="white">BA</text>
-        <text x="530" y="162" font-size="10" fill="white">CE</text>
-        <text x="403" y="333" font-size="10" fill="white">DF</text>
-        <text x="515" y="400" font-size="10" fill="white">ES</text>
-        <text x="370" y="335" font-size="10" fill="white">GO</text>
-        <text x="440" y="160" font-size="10" fill="white">MA</text>
-        <text x="280" y="300" font-size="10" fill="white">MT</text>
-        <text x="295" y="410" font-size="10" fill="white">MS</text>
-        <text x="450" y="385" font-size="10" fill="white">MG</text>
-        <text x="315" y="160" font-size="10" fill="white">PA</text>
-        <text x="590" y="195" font-size="10" fill="white">PB</text>
-        <text x="341" y="480" font-size="10" fill="white">PR</text>
-        <text x="555" y="215" font-size="10" fill="white">PE</text>
-        <text x="490" y="200" font-size="10" fill="white">PI</text>
-        <text x="490" y="440" font-size="10" fill="white">RJ</text>
-        <text x="577" y="175" font-size="10" fill="white">RN</text>
-        <text x="320" y="570" font-size="10" fill="white">RS</text>
-        <text x="165" y="260" font-size="10" fill="white">RO</text>
-        <text x="195" y="70" font-size="10" fill="white">RR</text>
-        <text x="370" y="525" font-size="10" fill="white">SC</text>
-        <text x="390" y="440" font-size="10" fill="white">SP</text>
-        <text x="567" y="250" font-size="10" fill="white">SE</text>
-        <text x="392" y="240" font-size="10" fill="white">TO</text>
+        <text x="20" y="218" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-AC" class="cursor-pointer">AC</text>
+        <text x="580" y="236" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-AL" class="cursor-pointer">AL</text>
+        <text x="340" y="72" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-AP" class="cursor-pointer">AP</text>
+        <text x="166" y="158" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-AM" class="cursor-pointer">AM</text>
+        <text x="490" y="280" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-BA" class="cursor-pointer">BA</text>
+        <text x="530" y="162" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-CE" class="cursor-pointer">CE</text>
+        <text x="403" y="333" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-DF" class="cursor-pointer">DF</text>
+        <text x="515" y="400" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-ES" class="cursor-pointer">ES</text>
+        <text x="370" y="335" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-GO" class="cursor-pointer">GO</text>
+        <text x="440" y="160" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-MA" class="cursor-pointer">MA</text>
+        <text x="280" y="300" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-MT" class="cursor-pointer">MT</text>
+        <text x="295" y="410" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-MS" class="cursor-pointer">MS</text>
+        <text x="450" y="385" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-MG" class="cursor-pointer">MG</text>
+        <text x="315" y="160" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-PA" class="cursor-pointer">PA</text>
+        <text x="590" y="195" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-PB" class="cursor-pointer">PB</text>
+        <text x="341" y="480" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-PR" class="cursor-pointer">PR</text>
+        <text x="555" y="215" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-PE" class="cursor-pointer">PE</text>
+        <text x="490" y="200" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-PI" class="cursor-pointer">PI</text>
+        <text x="490" y="440" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-RJ" class="cursor-pointer">RJ</text>
+        <text x="577" y="175" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-RN" class="cursor-pointer">RN</text>
+        <text x="320" y="570" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-RS" class="cursor-pointer">RS</text>
+        <text x="165" y="260" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-RO" class="cursor-pointer">RO</text>
+        <text x="195" y="70" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-RR" class="cursor-pointer">RR</text>
+        <text x="370" y="525" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-SC" class="cursor-pointer">SC</text>
+        <text x="390" y="440" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-SP" class="cursor-pointer">SP</text>
+        <text x="567" y="250" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-SE" class="cursor-pointer">SE</text>
+        <text x="392" y="240" font-size="10" fill="white" (click)="onPathClick($event)" id="BR-TO" class="cursor-pointer">TO</text>
       </svg>
     </div>
 </section>
