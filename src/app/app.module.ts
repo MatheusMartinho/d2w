@@ -23,6 +23,8 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { EmpresaComponent } from './empresa/empresa.component';
 import { DistribuidoresComponent } from './distribuidores/distribuidores.component';
+import { RacksDataCenterComponent } from './racks-data-center/racks-data-center.component';
+import { W35Component } from './w35/w35.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -44,6 +46,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     EmpresaComponent,
     DistribuidoresComponent,
+    RacksDataCenterComponent,
+    W35Component,
   ],
   imports: [
     BrowserModule,
