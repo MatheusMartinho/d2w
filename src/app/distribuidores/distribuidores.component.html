@@ -1,4 +1,14 @@
-<section class="flex m-16">
+<div class="text-sm breadcrumbs ml-16">
+  <ul>
+    <li>
+      <a>{{ "Home" | translate }}</a>
+    </li>
+    <li>
+      <a>{{ "Distribuidores" | translate }}</a>
+    </li>
+  </ul>
+</div>
+<section class="flex m-16 p-2">
   <div class="right w-1/2 flex  items-center justify-center">
     <div class="card card-side bg-base-100 shadow-xl flex flex-col  h-full w-7/12 items-center">
       <!-- Conteúdo que depende de currentState -->
@@ -7,18 +17,18 @@
         <a href="{{currentState?.url}}" target="_blank">
           <img src="{{ currentState?.capital }}" alt="Imagem de {{ currentState?.nome }}">
         </a>
-        <p>{{ currentState?.description}}
+        <p>{{ currentState?.description | translate}}
 
         <div class="mockup-browser bg-base-300 w-96">
           <div class="mockup-browser-toolbar">
-            <div class="input">www.horustelecom.com.br</div>
+            <div class="input">{{currentState?.url}}</div>
           </div>
           <div class="flex justify-center bg-base-200"><img src="{{ currentState?.img1 }}" alt="Imagem de {{ currentState?.nome }}"></div>
         </div>
       </div>
 
       <div class="card-actions justify-end flex justify-center m-6">
-        <button class="btn btn-primary">Watch</button>
+        <a href="{{currentState?.url}}" target="_blank"><button class="btn btn-primary">{{"Acessar site" | translate}}</button></a>
       </div>
 
       <!-- Conteúdo Padrão -->
@@ -28,7 +38,7 @@
             <img src="/assets/images/logos/logod2w.png" alt="">
           <p class="card-title">Tel/Fax: (11) 5522-2699</p>
           <p>WhatsApp: (11) 91116-0637</p>
-          <p>Clique nos demais estados do mapa para mais opções.</p>
+          <p>{{"Clique nos demais estados do mapa para mais opções." | translate}}</p>
         </div>
       </ng-template>
 
